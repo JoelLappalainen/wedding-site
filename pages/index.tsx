@@ -229,11 +229,11 @@ export default function Home() {
                     celebrate our wedding on December 4 in Mäntsälä, Finland.
                     The wedding ceremony and reception will take place at{" "}
                     <Link
-                      href="https://hirvihaarankartano.fi/en/glass-pavilion"
+                      href="https://fi.wikipedia.org/wiki/Venetsia"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Hirvihaaran kartano Glass Pavilion
+                      TBA
                     </Link>
                     . The ceremony will begin at <br />4 p.m. and the reception
                     and party will go on until we drop 🕺🏼💃🏼
@@ -241,7 +241,7 @@ export default function Home() {
 
                   <Text variant="body">
                     Please confirm your attendance directly to either Teemu or
-                    Milka by <strong>September 15</strong>, the latest.
+                    Milka by <strong>TBA</strong>, the latest.
                   </Text>
 
                   <Text variant="body">
@@ -250,7 +250,7 @@ export default function Home() {
                     we've got you covered.
                   </Text>
 
-                  <Text variant="body">Hope to see you in December!</Text>
+                  <Text variant="body">Hope to see you in August!</Text>
                 </Stack>
               </Stack>
             </Section>
