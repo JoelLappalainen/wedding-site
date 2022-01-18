@@ -21,12 +21,12 @@ export const {
 } = createCss({
   theme: {
     colors: {
-      text: "#333",
+      text: "#5F8575",
       gray: "#888",
       white: "#fff",
       primary: "hsl(133, 35%, 10%)",
       secondary: "hsl(155, 7%, 47%)",
-      tertiary: "hsl(39, 56%, 46%)",
+      tertiary: "#a64e2d",
       // tertiary: "hsl(35, 32%, 76%)",
       // tertiaryLight: "hsl(35, 32%, 90%)",
     },

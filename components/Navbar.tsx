@@ -9,7 +9,7 @@ export default function Navbar() {
       <Stack
         as="ul"
         axis={{ initial: "x", md: "y" }}
-        spacing={{ initial: "none", md: "medium" }}
+        spacing={{ initial: "small", md: "medium" }}
         align="center"
         justify="between"
       >

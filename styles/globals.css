@@ -1,18 +1,18 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  min-height: 100%;
-  background-color: #f0f5ef;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-  scroll-padding-top: 24px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: transparent;
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	background-color: #f0f5ef;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 24px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Playfair Display", serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 button,
@@ -28,43 +28,44 @@ input,
 textarea,
 select,
 optgroup {
-  font-family: "Open Sans", sans-serif;
-  appearance: none;
-  border: none;
-  background: none;
-  /* animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); */
+	font-family: 'Montserrat', sans-serif;
+	appearance: none;
+	border: none;
+	background: none;
+
+	/* animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); */
 }
 
 * {
-  box-sizing: border-box;
-  outline: none;
+	box-sizing: border-box;
+	outline: none;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 ul,
 ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 li {
-  margin: 0;
+	margin: 0;
 }
 
 *:focus-visible {
-  outline: 1px solid hsl(133, 35%, 10%);
+	outline: 1px solid hsl(133, 35%, 10%);
 }
 
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }

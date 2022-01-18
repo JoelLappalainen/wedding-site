@@ -13,63 +13,44 @@ type TypographyVariantVar = `$${TypographyVariant}`;
 
 const rem = (px: number) => `${px / 16}rem`;
 
-// const decorationHeight = 70;
-// const leafDecoration = {
-//   paddingBottom: `${decorationHeight}px`,
-//   position: "relative",
-//   "&::after": {
-//     content: `""`,
-//     display: "block",
-//     position: "absolute",
-//     bottom: "0px",
-//     left: "16px",
-//     right: "16px",
-//     height: `${decorationHeight}px`,
-//     backgroundImage: 'url("branch.png")',
-//     backgroundPosition: "0px 0px",
-//     backgroundSize: "100% 100%",
-//     backgroundRepeat: "no-repeat",
-//   },
-// } as any;
-
 const typographyVariants: {
   [variant in TypographyVariantVar]: CSSProperties;
 } = {
   $body: {
-    fontFamily: '"Open Sans", sans-serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1.5,
     fontSize: rem(18),
     fontWeight: 400,
   },
   $bodySmall: {
-    fontFamily: '"Open Sans", sans-serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1.2,
     fontSize: rem(14),
     fontWeight: 400,
   },
   $title1: {
-    fontFamily: '"Playfair Display", serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1,
     fontSize: rem(64),
     fontWeight: 700,
     color: "$tertiary",
   },
   $title2: {
-    fontFamily: '"Playfair Display", serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1,
     fontSize: rem(48),
-    fontWeight: 400,
+    fontWeight: 600,
     color: "$tertiary",
   },
   $title3: {
-    fontFamily: '"Playfair Display", serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1,
     fontSize: rem(26),
-    fontWeight: 500,
+    fontWeight: 550,
     color: "$primary",
   },
   $button: {
-    fontFamily: '"Playfair Display", serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1,
     fontSize: rem(18),
     fontWeight: 500,
@@ -77,7 +58,7 @@ const typographyVariants: {
     textTransform: "uppercase",
   },
   $navLink: {
-    fontFamily: '"Playfair Display", serif',
+    fontFamily: '"Montserrat", sans-serif',
     lineHeight: 1,
     fontSize: rem(16),
     fontWeight: 400,

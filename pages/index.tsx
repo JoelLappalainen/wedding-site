@@ -5,54 +5,35 @@ import { Text, Stack, Spacer, Link } from "@components/common";
 import SignupForm from "@components/SignupForm";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
-import logoImg from "../images/logo.png";
 import teemuMilkaImg from "../images/teemu_milka.png";
 import mapImg from "../images/map.png";
 import branchImg from "../images/branch.png";
-import leafsImg from "../images/leafs.png";
+import coverImg from "../images/jaakkoJaJanniCover.jpg";
 import { PAGE_WIDTH } from "../constants";
 
 export default function Home() {
   return (
     <Page>
       <Head>
-        <title>Teemun ja Milkan häät</title>
+        <title>Jannin ja Jaakon häät</title>
       </Head>
 
       <Content>
         <Header>
-          <HeaderDecoration>
-            <Img src={leafsImg} />
-          </HeaderDecoration>
+          {/* <HeaderDecoration> */}
+            <Img src={coverImg} />
+          {/* </HeaderDecoration> */}
 
           <Stack
             align="center"
-            spacing={{ initial: "xxxlarge", md: "xxlarge" }}
+            spacing={{ initial: "xxlarge", md: "xlarge" }}
           >
-            <Stack align="center" spacing="large">
-              <Img
-                src={logoImg}
-                alt="Teemun ja Milkan alkukirjaimet"
-                width={120}
-                height={120}
-                webp
-              />
-
-              <Img
-                src={teemuMilkaImg}
-                alt="Teemu ja Milka"
-                width={864}
-                height={156}
-                webp
-                style={{ height: "auto", maxWidth: "80vw" }}
-              />
-            </Stack>
-
+            <Spacer size="xlarge" />
             <Navbar />
           </Stack>
         </Header>
 
-        <Spacer size={{ initial: "xxxlarge", md: "xxlarge" }} />
+        <Spacer size={{ initial: "xxlarge", md: "xxlarge" }} />
 
         <main>
           <Stack spacing="xxxlarge">
@@ -67,21 +48,9 @@ export default function Home() {
 
                   <Stack spacing="medium">
                     <Text variant="body">
-                      Toivotamme sinut tervetulleeksi juhlimaan häitämme
-                      joulukuun 4. päivänä Hirvihaaran kartanon Lasipaviljonkiin
-                      Mäntsälään. Luvassa on rentoa ja lämmintä tunnelmaa
-                      ystävien ja perheen kesken, hyvää ruokaa, nauramista ja
-                      toivottavasti myös paljon tanssimista!
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum. Aenean vitae erat varius, dignissim lorem nec, tempus libero. Donec magna nunc, sollicitudin ut elementum in, tincidunt scelerisque eros. Aenean sit amet nulla in sem malesuada imperdiet vitae a enim. Maecenas eu dolor vitae erat tempus accumsan elementum at lectus. Integer porttitor, mauris eu volutpat aliquet, justo turpis suscipit ex, eu eleifend massa ante sed libero. Nunc feugiat sapien ex, ut elementum velit rhoncus in. Nullam mollis semper convallis. In vel velit dictum, placerat purus maximus, suscipit mauris. Nunc at sem hendrerit, sagittis ex vel, tincidunt neque.!
                     </Text>
-
-                    <Text variant="body">
-                      Tältä sivulta löydät tietoa häihin liittyvistä käytännön
-                      asioista. Ilmoitathan osallistumisestasi alla olevalla
-                      lomakkeella viimeistään <br />
-                      <strong>15. syyskuuta</strong> mennessä.
-                    </Text>
-
-                    <Text variant="body">Joulukuussa juhlitaan!</Text>
+                    <Text variant="body">Elokuussa juhlitaan!</Text>
                   </Stack>
                 </Stack>
               </Stack>
@@ -104,41 +73,37 @@ export default function Home() {
                 <MapImg>
                   <Img
                     src={mapImg}
-                    alt="Karttaohjeet Hirvihaaran kartanolle"
+                    alt="TBA"
                     width={PAGE_WIDTH}
                     height={0.33333 * PAGE_WIDTH}
                     webp
                   />
                 </MapImg>
 
-                <Text variant="title3">Hirvihaaran kartano</Text>
+                <Text variant="title3">TBA</Text>
 
                 <Spacer size="normal" />
 
-                <Text variant="body">Lasipaviljonki</Text>
+                <Text variant="body">TBA TBA TBA</Text>
 
                 <Link
-                  href="https://g.page/Hirvihaara?share"
+                  href="https://goo.gl/maps/VwkK4n98yJjskrtR6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Kartanonlenkki 56, 04680 Hirvihaara
+                  TBA 56, 04680 TBA
                 </Link>
 
                 <Text variant="body">
-                  Hirvihaaran kartano sijaitsee muutaman kilometrin päässä
-                  Mäntsälän keskustasta. Kartanon pihapiirissä on iso, ilmainen
-                  parkkipaikka. Mäntsälään pääsee myös helposti junalla, ja
-                  keskustasta voi ottaa kartanolle taksikyydin. Kannustamme myös
-                  järjestämään kimppakyytejä!
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum. Aenean vitae erat varius, dignissim lorem nec, tempus libero. Donec magna nunc, sollicitudin ut elementum in, tincidunt scelerisque eros. Aenean sit amet nulla in sem malesuada imperdiet vitae a enim. Maecenas eu dolor vitae erat tempus accumsan elementum at lectus. Integer porttitor, mauris eu volutpat aliquet, justo turpis suscipit ex, eu eleifend massa ante sed libero. Nunc feugiat sapien ex, ut elementum velit rhoncus in. Nullam mollis semper convallis. In vel velit dictum, placerat purus maximus, suscipit mauris. Nunc at sem hendrerit, sagittis ex vel, tincidunt neque.
                 </Text>
 
                 <Link
-                  href="http://hirvihaarankartano.fi/"
+                  href="https://fi.wikipedia.org/wiki/Venetsia"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Hirvihaaran verkkosivut
+                  Menomestan verkkosivut
                 </Link>
               </Stack>
             </Section>
@@ -158,10 +123,8 @@ export default function Home() {
                         <Text variant="title3">Aikataulu</Text>
 
                         <Text variant="body">
-                          Vihkiminen alkaa <strong>klo 16</strong>{" "}
-                          juhlapaikalla, Lasipaviljongissa. Saavuthan ajoissa
-                          paikalle. Juhlat jatkuvat juhlijoiden kisakunnosta
-                          riippuen myöhään yöhön.
+                          Vihkiminen alkaa <strong>klo TBA</strong>{" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
                         </Text>
                       </Stack>
                     </div>
@@ -171,28 +134,11 @@ export default function Home() {
                         <Text variant="title3">Majoitus</Text>
 
                         <Text variant="body">
-                          Hirvihaaran kartanolta on mahdollista varata majoitus
-                          hintaan 178 €/yö (kahden hengen huone) tai 152 €/yö
-                          (yhden hengen huone). Lisävuode 50 €/yö.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
                         </Text>
 
                         <Text variant="body">
-                          Kartanolla on myös pienempi sisarhotelli Mäntsälän
-                          keskustassa,{" "}
-                          <Link href="https://www.kartanonmeijeri.com/">
-                            Hotelli Kartanon Meijeri
-                          </Link>
-                          , jossa kahden hengen huone on 135 €/yö ja yhden
-                          hengen huone 108 €/yö. Lisätietoja majoittumisesta ja
-                          varauksista saa osoitteesta{" "}
-                          <Link
-                            href="mailto:myynti@hirvihaarankartano.fi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            myynti@hirvihaarankartano.fi
-                          </Link>
-                          . Muistathan mainita, että olet häävieras.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
                         </Text>
                       </Stack>
                     </div>
@@ -209,7 +155,7 @@ export default function Home() {
                           rakkaitten vieraittemme kanssa! Jos kuitenkin tahdot
                           muistaa meitä lahjalla, toivomme pientä lahjoitusta
                           häämatkaamme varten. Muistamiset voi osoittaa suoraan
-                          häämatkatilillemme <em>FI7214023202011082</em>.
+                          häämatkatilillemme <em>TBA</em>.
                         </Text>
                       </Stack>
                     </div>
@@ -239,29 +185,29 @@ export default function Home() {
                   <Stack axis={{ initial: "x", md: "y" }} spacing="xlarge">
                     <div>
                       <Stack spacing="small" align="center">
-                        <Text variant="title3">Teemu Taskula</Text>
+                        <Text variant="title3">Jaakko Kallio</Text>
                         <Link
                           href="mailto:teemu.taskula@taitounited.fi"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          teemu.taskula@taitounited.fi
+                          tba@tba.fi
                         </Link>
-                        <Link href="tel:+358400848728">+358400848728</Link>
+                        <Link href="tel:+358400848728">+3580000000</Link>
                       </Stack>
                     </div>
 
                     <div>
                       <Stack spacing="small" align="center">
-                        <Text variant="title3">Milka Nissinen</Text>
+                        <Text variant="title3">Janica Tuominen</Text>
                         <Link
                           href="mailto:milkamarianne@gmail.com"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          milkamarianne@gmail.com
+                          tba@tba.fi
                         </Link>
-                        <Link href="tel:+358445758980">+358445758980</Link>
+                        <Link href="tel:+358445758980">+3580000000</Link>
                       </Stack>
                     </div>
                   </Stack>
@@ -341,18 +287,18 @@ const Content = styled("div", {
   width: "100%",
   maxWidth: `${PAGE_WIDTH}px`,
   margingHorizontal: "auto",
-  paddingTop: "300px",
+  // paddingTop: "300px",
   backgroundColor: "#fff",
   boxShadow: "0px 0px 24px rgb(0, 0, 0, 0.05)",
   overflow: "hidden",
-  when: {
-    md: {
-      paddingTop: "200px",
-    },
-    sm: {
-      paddingTop: "120px",
-    },
-  },
+  // when: {
+  //   md: {
+  //     paddingTop: "200px",
+  //   },
+  //   sm: {
+  //     paddingTop: "120px",
+  //   },
+  // },
 });
 
 const Header = styled("header", {
