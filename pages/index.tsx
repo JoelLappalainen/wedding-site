@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Img from "react-optimized-image";
 import { styled } from "@styles/styled";
-import { Text, Stack, Spacer, Link } from "@components/common";
+import { Text, Stack, Spacer, Link, Button, Ul, TextHighlight } from "@components/common";
 import SignupForm from "@components/SignupForm";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import teemuMilkaImg from "../images/teemu_milka.png";
 import mapImg from "../images/map.png";
-import branchImg from "../images/branch.png";
+import branchImg from "../images/branch2.png";
 import coverImg from "../images/jaakkoJaJanniCover.jpg";
 import { PAGE_WIDTH } from "../constants";
 
@@ -45,21 +45,61 @@ export default function Home() {
                   </Text>
 
                   <LeafDecoration />
+                  <Text variant="body">
+                    Hei rakkaat ihmiset, tervetuloa juhlimaan ja todistamaan kanssamme avioliittomme ensiaskelia. Toivottavasti näemme elokuussa, emme malttaisi odottaa!
+                  </Text>
+                  <Text variant="body" align="left"> 
+                    <Spacer size="normal" />
+                    <strong>TL;DR</strong> 
+                    <Spacer size="small" />
+                    <strong>Mitä:</strong> Me mennään naimisiin, juhlat!
+                    <Spacer size="xxsmall" />
+                    <strong>Missä:</strong> Vihkiminen: Kärkölän kirkko (Kirkkotie 7, 16610 Kärkölä)
+                    <Spacer size="xxsmall" />
+                    <strong>Juhlapaikka:</strong> Etu-Koskelan tila (Sulkavantie 395, 16670 Lappila)
+                    <Spacer size="xxsmall" />
+                    <strong>Milloin:</strong> Vihkiminen klo 15.00, bileet heti perään siirtymisen jälkeen
+                    <Spacer size="xxsmall" />
+                    <strong>Kuka:</strong> Kutsussa nimetyt henkilöt
+                    <Spacer size="xxsmall" />
+                    <strong>Pukukoodi:</strong> Smart casual. Elokuun illat saattavat olla viileitä, muistathan ottaa mukaan myös lämmintä!
+                    <Spacer size="xxsmall" />
+                    <strong>Bonus:</strong> Muistattehan ilmoittautua 24.7.2022 mennessä.
+                  </Text>
+                
+                  <Spacer size="xlarge" />
+                  <Text variant="title3" id="aikatauluJaSaapuminen">
+                    Aikataulu ja saapuminen
+                  </Text>
+                  <Text variant="body">
+                    Vihkiminen tapahtuu Kärkölän kirkossa klo 15.00. Saavuttehan ajoissa paikalle. 
+                    Vihkimisen jälkeen siirrytään juhlapaikalle Etu-Koskelan tilalle. Luvassa on ruokaa ja musiikkia, ja halutessaan juhlia saa vaikka aamuun saakka. Halutessanne pitää puheen tai järjestää muun ohjelmanumeron, otattehan etukäteen yhteyttä Annika-kaasoon (yhteystiedot alla). Mikäli haluatte osallistua ainoastaan hääjuhlaan, voitte saapua myös suoraan juhlapaikalle. Ilmoitattehan myös tästä etukäteen. Juhlapaikalle ja sen läheisyyteen pääsee myös julkisilla kulkuneuvoilla (Lappilan juna-asema), mutta kehotamme tutkimaan myös mahdollisuutta esimerkiksi kimppakyytiin. Juhlapaikalla on runsaasti parkkitilaa. Juhlapaikan isäntä on lupautunut ajamaan tilataksia juhlapaikan ja Lahden välillä kiinteään hintaan, joten mikäli taksikyydille on tarvetta, laitattehan viestiä.
+                    Mikäli tarvitsette apua kimppakyytien, kuljetusten tai majoitusvaihtoehtojen setvimisen kanssa, olkaa yhteydessä, niin järjestetään! 
+                  </Text>
+                
+                  <Spacer size="xlarge" />
+                  <Text variant="title3" id="ilmoittautuminen">
+                    Ilmoittautuminen
+                  </Text>
+                  <Text variant="body">
+                    <strong>Ilmoittautuminen 24.7.2022 mennessä. </strong>
+                    <Spacer size="medium" />
 
-                  <Stack spacing="medium">
-                    <Text variant="body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum. Aenean vitae erat varius, dignissim lorem nec, tempus libero. Donec magna nunc, sollicitudin ut elementum in, tincidunt scelerisque eros. Aenean sit amet nulla in sem malesuada imperdiet vitae a enim. Maecenas eu dolor vitae erat tempus accumsan elementum at lectus. Integer porttitor, mauris eu volutpat aliquet, justo turpis suscipit ex, eu eleifend massa ante sed libero. Nunc feugiat sapien ex, ut elementum velit rhoncus in. Nullam mollis semper convallis. In vel velit dictum, placerat purus maximus, suscipit mauris. Nunc at sem hendrerit, sagittis ex vel, tincidunt neque.!
-                    </Text>
-                    <Text variant="body">Elokuussa juhlitaan!</Text>
-                  </Stack>
+                    <Button onClick={() => window.open("https://goo.gl/maps/VwkK4n98yJjskrtR6", "_blank") }>Ilmoittaudu</Button>
+                    {/* <Link
+                      href="https://goo.gl/maps/VwkK4n98yJjskrtR6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Linkki ilmoittautumiseen!
+                    </Link> */}
+                  </Text>
                 </Stack>
               </Stack>
 
-              <Spacer size="xlarge" />
-
-              <SignupFormWrapper>
+              {/* <SignupFormWrapper>
                 <SignupForm />
-              </SignupFormWrapper>
+              </SignupFormWrapper> */}
             </Section>
 
             <Section>
@@ -109,58 +149,37 @@ export default function Home() {
             </Section>
 
             <Section>
-              <Stack spacing="large" align="center">
+              <Stack spacing="medium" align="center">
                 <Text variant="title2" id="lisatietoja">
                   Lisätietoja
                 </Text>
 
                 <LeafDecoration />
 
-                <div>
-                  <Stack spacing="xlarge" align="center">
-                    <div>
-                      <Stack spacing="medium" align="center">
-                        <Text variant="title3">Aikataulu</Text>
+                <Text variant="title3" id="majoittuminen">
+                  Majoittuminen
+                </Text>
 
-                        <Text variant="body">
-                          Vihkiminen alkaa <strong>klo TBA</strong>{" "}
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
-                        </Text>
-                      </Stack>
-                    </div>
+                <Text variant="body">
+                  Mikäli olette extreme- tai eräihmisiä, hyviä uutisia, juhlapaikalle saa majoittua telttaillen! 
+                  Mikäli kaipaatte retkipatjaa pehmeämpää petiä, valitettavasti juhlapaikan yhteydessä ei ole virallisempaa majoittautumismahdollisuutta. 
+                  Lähimmät hotellit löytyvät Lahden puolelta. 
+                </Text>
+                  
+                <Spacer size="xlarge" />
 
-                    <div>
-                      <Stack spacing="medium" align="center">
-                        <Text variant="title3">Majoitus</Text>
+                <Text variant="title3" id="muistaminen">
+                  Muistaminen
+                </Text>
 
-                        <Text variant="body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
-                        </Text>
+                <Text variant="body">
+                  Meitä useammin kuin muutaman kerran muutossa auttanut bestman Antti (kiitos Antti!) erään muuttorumbamme loppuvaiheessa kauniisti ilmaisi, että kannettavaa voisi olla vähemmänkin. 
+                  Olemme yhteisten vuosiemme aikana onnistuneesti täyttäneet emme yhtä, vaan kaksi yhteistä kotia kaikella pastakoneesta Dapen säkkituoliin, ja valkokankaasta Airfryeriin. Erityisesti näiden haastavien vuosien jälkeen parasta on, jos vain pääsette kanssamme juhlimaan! 
+                  Jos kuitenkin haluatte muistaa meitä läsnäolonne lisäksi, voitte halutessanne korottaa seikkailukassaamme tilille:
+                  <Spacer size="medium" />
+                  <strong>Janica Tuominen / FI04 1220 5000 3451 58</strong>
+                </Text>
 
-                        <Text variant="body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum.
-                        </Text>
-                      </Stack>
-                    </div>
-
-                    <div>
-                      <Stack spacing="medium" align="center">
-                        <Text variant="title3">Hääparin muistaminen</Text>
-
-                        <Text variant="body">
-                          Useiden yhdessä asuttujen vuosien jälkeen lusikat,
-                          soppakauhat, leivänpaahtimet ja maljakot ovat jo
-                          löytäneet tiensä kotiimme. Häälahjojen sijaan meille
-                          tärkeintä onkin saada juhlia tätä ihanaa päivää
-                          rakkaitten vieraittemme kanssa! Jos kuitenkin tahdot
-                          muistaa meitä lahjalla, toivomme pientä lahjoitusta
-                          häämatkaamme varten. Muistamiset voi osoittaa suoraan
-                          häämatkatilillemme <em>TBA</em>.
-                        </Text>
-                      </Stack>
-                    </div>
-                  </Stack>
-                </div>
               </Stack>
             </Section>
 
@@ -173,10 +192,7 @@ export default function Home() {
                 <LeafDecoration />
 
                 <Text variant="body">
-                  Onko sinulla kysyttävää ilmoittautumisesta, aikataulusta tai
-                  jostain muusta häihin liittyvästä asiasta? Meihin molempiin
-                  voi olla yhteydessä sekä sähköpostitse että puhelimitse
-                  WhatsAppissa, tekstarilla tai soittamalla.
+                  Mikäli herää kysymyksiä, kommentteja tai muuta, olkaa toki yhteydessä!
                 </Text>
 
                 <Spacer size="xlarge" />
@@ -185,29 +201,22 @@ export default function Home() {
                   <Stack axis={{ initial: "x", md: "y" }} spacing="xlarge">
                     <div>
                       <Stack spacing="small" align="center">
-                        <Text variant="title3">Jaakko Kallio</Text>
-                        <Link
-                          href="mailto:teemu.taskula@taitounited.fi"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          tba@tba.fi
-                        </Link>
-                        <Link href="tel:+358400848728">+3580000000</Link>
+                        <Text variant="title3">Janni</Text>
+                        <Link href="tel:+358400616837">0400 616 837</Link>
                       </Stack>
                     </div>
 
                     <div>
                       <Stack spacing="small" align="center">
-                        <Text variant="title3">Janica Tuominen</Text>
-                        <Link
-                          href="mailto:milkamarianne@gmail.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          tba@tba.fi
-                        </Link>
-                        <Link href="tel:+358445758980">+3580000000</Link>
+                        <Text variant="title3">Jaakko</Text>
+                        <Link href="tel:+358453533999">045 353 3999</Link>
+                      </Stack>
+                    </div>
+
+                    <div>
+                      <Stack spacing="small" align="center">
+                        <Text variant="title3">Annika (kaaso)</Text>
+                        <Link href="tel:+358404122319">040 412 2319</Link>
                       </Stack>
                     </div>
                   </Stack>
@@ -223,35 +232,58 @@ export default function Home() {
 
                 <LeafDecoration />
 
-                <Stack spacing="medium">
-                  <Text variant="body">
-                    Hey you international guest! We warmly welcome you to
-                    celebrate our wedding on December 4 in Mäntsälä, Finland.
-                    The wedding ceremony and reception will take place at{" "}
-                    <Link
-                      href="https://fi.wikipedia.org/wiki/Venetsia"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      TBA
-                    </Link>
-                    . The ceremony will begin at <br />4 p.m. and the reception
-                    and party will go on until we drop 🕺🏼💃🏼
-                  </Text>
+                <Text variant="body">
+                  Hey B (and anyone else feeling international) this is for you! 
+                  Dear peeps, we welcome you to join and celebrate the first steps of our marriage. 
+                  We hope to see you in August, can't wait! 
+                </Text>
 
-                  <Text variant="body">
-                    Please confirm your attendance directly to either Teemu or
-                    Milka by <strong>TBA</strong>, the latest.
-                  </Text>
+                <Text variant="body" align="left"> 
+                  <Spacer size="normal" />
+                  <Text variant="body" color="primary"><strong>TL;DR</strong></Text>
+                  <Spacer size="small" />
+                  <Text variant="body" color="primary"><TextHighlight>What:</TextHighlight> We're getting married, a party!</Text>
+                  <Spacer size="small" />
+                  <TextHighlight>Where:</TextHighlight>
+                  <Ul>
+                    <li><strong>Ceremony:</strong> Church of Kärkölä city (Kirkkotie 7, 16610 Kärkölä)</li>
+                    <li><strong>Wedding venue:</strong> Etu-Koskela ranch (Sulkavantie 395, 16670 Lappila)</li>
+                  </Ul>
+                  <Spacer size="small" />
+                  <Text variant="body" color="primary"><TextHighlight>When:</TextHighlight> Ceremony 3:00 PM sharp, party right after at the venue as soon as we have relocated</Text>
+                  <Spacer size="small" />
+                  <Text variant="body" color="primary"><TextHighlight>Who:</TextHighlight> People designated in the invitation</Text>
+                  <Spacer size="small" />
+                  <Text variant="body" color="primary"><TextHighlight>Dress code:</TextHighlight> Smart casual. August nights can be chilly, so remember to pack something warm with you just in case!</Text>
+                  <Spacer size="small" />
+                  <Text variant="body" color="primary"><TextHighlight>Bonus:</TextHighlight> Please remember to RSVP by 24th July 2022</Text>
+                </Text>
 
-                  <Text variant="body">
-                    Regarding your arrival to the venue and accommodation, don’t
-                    worry – <br />
-                    we've got you covered.
-                  </Text>
+                <Spacer size="xlarge" />
 
-                  <Text variant="body">Hope to see you in August!</Text>
-                </Stack>
+                <Text variant="title3" id="majoittuminen">
+                  Majoittuminen
+                </Text>
+
+                <Text variant="body">
+                  Mikäli olette extreme- tai eräihmisiä, hyviä uutisia, juhlapaikalle saa majoittua telttaillen! 
+                  Mikäli kaipaatte retkipatjaa pehmeämpää petiä, valitettavasti juhlapaikan yhteydessä ei ole virallisempaa majoittautumismahdollisuutta. 
+                  Lähimmät hotellit löytyvät Lahden puolelta. 
+                </Text>
+                  
+                <Spacer size="xlarge" />
+
+                <Text variant="title3" id="muistaminen">
+                  Muistaminen
+                </Text>
+
+                <Text variant="body">
+                  Meitä useammin kuin muutaman kerran muutossa auttanut bestman Antti (kiitos Antti!) erään muuttorumbamme loppuvaiheessa kauniisti ilmaisi, että kannettavaa voisi olla vähemmänkin. 
+                  Olemme yhteisten vuosiemme aikana onnistuneesti täyttäneet emme yhtä, vaan kaksi yhteistä kotia kaikella pastakoneesta Dapen säkkituoliin, ja valkokankaasta Airfryeriin. Erityisesti näiden haastavien vuosien jälkeen parasta on, jos vain pääsette kanssamme juhlimaan! 
+                  Jos kuitenkin haluatte muistaa meitä läsnäolonne lisäksi, voitte halutessanne korottaa seikkailukassaamme tilille:
+                  <Spacer size="medium" />
+                  <strong>Janica Tuominen / FI04 1220 5000 3451 58</strong>
+                </Text>
               </Stack>
             </Section>
           </Stack>
