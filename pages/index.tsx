@@ -2,7 +2,6 @@ import Head from "next/head";
 import Img from "react-optimized-image";
 import { styled } from "@styles/styled";
 import { Text, Stack, Spacer, Link, Button, Ul, TextHighlight } from "@components/common";
-import SignupForm from "@components/SignupForm";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import logo from "../images/logo.png";
@@ -453,10 +452,6 @@ const HeaderDecoration = styled("div", {
     position: "absolute",
     marginBottom: "25px"
   },
-});
-
-const SignupFormWrapper = styled("div", {
-  margingHorizontal: "calc(-1 * $normal) !important",
 });
 
 const MapImg = styled("div", {
