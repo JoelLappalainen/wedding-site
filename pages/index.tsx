@@ -44,8 +44,8 @@ export default function Home() {
                 </Text>
 
                 <LeafDecoration />
-                <Text variant="body">
-                  Hei rakkaat ihmiset, tervetuloa juhlimaan ja todistamaan kanssamme avioliittomme ensiaskelia. 
+                <Text variant="body" align="justify">
+                  Hei rakkaat ihmiset, tervetuloa juhlimaan ja todistamaan kanssamme avioliittomme ensiaskelia 27.8.2022. 
                   Toivottavasti näemme elokuussa, emme malttaisi odottaa!
                 </Text>
                 <Text variant="body" align="left" color="primary"> 
@@ -53,35 +53,41 @@ export default function Home() {
                   <strong>TL;DR</strong> 
                   <Spacer size="small" />
                   <TextHighlight>Mitä:</TextHighlight> Me mennään naimisiin, juhlat!
-                  <Spacer size="xxsmall" />
-                  <TextHighlight>Missä:</TextHighlight> Vihkiminen: Kärkölän kirkko (<Link
-                    href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Kirkkotie 7, 16610 Kärkölä
-                  </Link>)
-                  <Spacer size="xxsmall" />
-                  <TextHighlight>Juhlapaikka:</TextHighlight> Etu-Koskelan tila (<Link
-                    href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Sulkavantie 395, 16670 Lappila
-                  </Link>)
-                  <Spacer size="xxsmall" />
-                  <TextHighlight>Milloin:</TextHighlight> Vihkiminen klo 15.00, bileet heti perään siirtymisen jälkeen
-                  <Spacer size="xxsmall" />
+                  <Spacer size="xsmall" />
+                  <TextHighlight>Missä:</TextHighlight> 
+                  <Ul>
+                    <li><strong>Vihkiminen:</strong> Kärkölän kirkko (
+                      <Link
+                        href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Kirkkotie 7, 16610 Kärkölä
+                      </Link>)
+                    </li>
+                    <li><strong>Juhlapaikka:</strong> Etu-Koskelan tila (
+                      <Link
+                        href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Sulkavantie 395, 16670 Lappila
+                      </Link>)
+                    </li>
+                  </Ul>
+                  <Spacer size="small" />
+                  <TextHighlight>Milloin:</TextHighlight> Lauantaina 27.8.2022. Vihkiminen klo 15.00, bileet heti perään siirtymisen jälkeen
+                  <Spacer size="small" />
                   <TextHighlight>Kuka:</TextHighlight> Kutsussa nimetyt henkilöt
-                  <Spacer size="xxsmall" />
+                  <Spacer size="small" />
                   <TextHighlight>Pukukoodi:</TextHighlight> Smart casual. Elokuun illat saattavat olla viileitä, muistathan ottaa mukaan myös lämmintä!
-                  <Spacer size="xxsmall" />
+                  <Spacer size="small" />
                   <TextHighlight>Bonus</TextHighlight> Muistattehan <Link
-                    href="https://TODO"
+                    href="https://forms.gle/q6CxYFJRqeRjcsY57"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    ilmoittautua
+                    ilmoittaa pääsettekö paikalle
                   </Link> 24.7.2022 mennessä.
                   <Spacer size="large" />
                 </Text>
@@ -90,9 +96,25 @@ export default function Home() {
                 <Text variant="title3" id="aikatauluJaSaapuminen">
                   Aikataulu ja saapuminen
                 </Text>
-                <Text variant="body">
-                  Vihkiminen tapahtuu Kärkölän kirkossa klo 15.00. Saavuttehan ajoissa paikalle. 
-                  Vihkimisen jälkeen siirrytään juhlapaikalle Etu-Koskelan tilalle. Luvassa on ruokaa ja musiikkia, ja halutessaan juhlia saa vaikka aamuun saakka. Halutessanne pitää puheen tai järjestää muun ohjelmanumeron, otattehan etukäteen yhteyttä Annika-kaasoon (yhteystiedot alla). Mikäli haluatte osallistua ainoastaan hääjuhlaan, voitte saapua myös suoraan juhlapaikalle. Ilmoitattehan myös tästä etukäteen. Juhlapaikalle ja sen läheisyyteen pääsee myös julkisilla kulkuneuvoilla (Lappilan juna-asema), mutta kehotamme tutkimaan myös mahdollisuutta esimerkiksi kimppakyytiin. Juhlapaikalla on runsaasti parkkitilaa. Juhlapaikan isäntä on lupautunut ajamaan tilataksia juhlapaikan ja Lahden välillä kiinteään hintaan, joten mikäli taksikyydille on tarvetta, laitattehan viestiä.
+                <Text variant="body" align="justify">
+                  Vihkiminen tapahtuu <Link
+                        href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Kärkölän kirkossa
+                      </Link> klo 15.00. Saavuttehan ajoissa paikalle. 
+                  Vihkimisen jälkeen siirrytään juhlapaikalle <Link
+                        href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Etu-Koskelan tilalle
+                      </Link>. 
+                  Luvassa on ruokaa ja musiikkia, ja halutessaan juhlia saa vaikka aamuun saakka. 
+                  Halutessanne pitää puheen tai järjestää muun ohjelmanumeron, otattehan etukäteen yhteyttä Annika-kaasoon (yhteystiedot alla). Mikäli haluatte osallistua ainoastaan hääjuhlaan, voitte saapua myös suoraan juhlapaikalle. Ilmoitattehan myös tästä etukäteen. 
+                  <Spacer size="normal" />
+                  Juhlapaikalle ja sen läheisyyteen pääsee myös julkisilla kulkuneuvoilla (Lappilan juna-asema), mutta kehotamme tutkimaan myös mahdollisuutta esimerkiksi kimppakyytiin. Juhlapaikalla on runsaasti parkkitilaa. Juhlapaikan isäntä on lupautunut ajamaan tilataksia juhlapaikan ja Lahden välillä kiinteään hintaan, joten mikäli taksikyydille on tarvetta, laitattehan viestiä.
                   Mikäli tarvitsette apua kimppakyytien, kuljetusten tai majoitusvaihtoehtojen setvimisen kanssa, olkaa yhteydessä, niin järjestetään! 
 
                   <Spacer size="large" />
@@ -102,57 +124,11 @@ export default function Home() {
                   Ilmoittautuminen
                 </Text>
                 <Text variant="body">
-                  <strong>Ilmoittautuminen 24.7.2022 mennessä. </strong>
+                  <strong>Ilmoitattehan 24.7.2022 mennessä pääsettekö osallistumaan juhlaan.</strong>
                   <Spacer size="medium" />
 
-                  <Button onClick={() => window.open("https://TODO", "_blank") }>Ilmoittaudu</Button>
+                  <Button onClick={() => window.open("https://forms.gle/q6CxYFJRqeRjcsY57", "_blank") }>Ilmoittaudu</Button>
                 </Text>
-              </Stack>
-            </Section>
-
-            <Section>
-              <Stack spacing="large" align="center">
-                <Text variant="title2" id="reittiohjeet">
-                  Reittiohjeet
-                </Text>
-
-                <LeafDecoration />
-
-                <MapImg>
-                  <Img
-                    src={mapImg}
-                    alt="TBA"
-                    width={PAGE_WIDTH}
-                    height={0.33333 * PAGE_WIDTH}
-                    webp
-                  />
-                </MapImg>
-
-                <Text variant="title3">TBA</Text>
-
-                <Spacer size="normal" />
-
-                <Text variant="body">TBA TBA TBA</Text>
-
-                <Link
-                  href="https://goo.gl/maps/VwkK4n98yJjskrtR6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TBA 56, 04680 TBA
-                </Link>
-
-                <Text variant="body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mauris id leo eleifend iaculis. Etiam congue quis elit consectetur dignissim. Ut id convallis ipsum. Aenean vitae erat varius, dignissim lorem nec, tempus libero. Donec magna nunc, sollicitudin ut elementum in, tincidunt scelerisque eros. Aenean sit amet nulla in sem malesuada imperdiet vitae a enim. Maecenas eu dolor vitae erat tempus accumsan elementum at lectus. Integer porttitor, mauris eu volutpat aliquet, justo turpis suscipit ex, eu eleifend massa ante sed libero. Nunc feugiat sapien ex, ut elementum velit rhoncus in. Nullam mollis semper convallis. In vel velit dictum, placerat purus maximus, suscipit mauris. Nunc at sem hendrerit, sagittis ex vel, tincidunt neque.
-                </Text>
-
-                <Link
-                  href="https://fi.wikipedia.org/wiki/Venetsia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Menomestan verkkosivut
-                </Link>
               </Stack>
             </Section>
 
@@ -168,7 +144,7 @@ export default function Home() {
                   Majoittuminen
                 </Text>
 
-                <Text variant="body">
+                <Text variant="body" align="justify">
                   Mikäli olette extreme- tai eräihmisiä, hyviä uutisia, juhlapaikalle saa majoittua telttaillen! 
                   Mikäli kaipaatte retkipatjaa pehmeämpää petiä, valitettavasti juhlapaikan yhteydessä ei ole virallisempaa majoittautumismahdollisuutta. 
                   Lähimmät hotellit löytyvät Lahden puolelta. 
@@ -180,24 +156,21 @@ export default function Home() {
                   Muistaminen
                 </Text>
 
-                <Text variant="body">
+                <Text variant="body" align="justify">
                   Meitä useammin kuin muutaman kerran muutossa auttanut bestman Antti (kiitos Antti!) erään muuttorumbamme loppuvaiheessa kauniisti ilmaisi, että kannettavaa voisi olla vähemmänkin. 
                   Olemme yhteisten vuosiemme aikana onnistuneesti täyttäneet emme yhtä, vaan kaksi yhteistä kotia kaikella pastakoneesta Dapen säkkituoliin, ja valkokankaasta Airfryeriin. Erityisesti näiden haastavien vuosien jälkeen parasta on, jos vain pääsette kanssamme juhlimaan! 
                   Jos kuitenkin haluatte muistaa meitä läsnäolonne lisäksi, voitte halutessanne korottaa seikkailukassaamme tilille:
-                  <Spacer size="medium" />
+                </Text>
+
+                <Text variant="body">
                   <strong>Janica Tuominen / FI04 1220 5000 3451 58</strong>
                 </Text>
 
-              </Stack>
-            </Section>
+                <Spacer size="xlarge" />
 
-            <Section>
-              <Stack spacing="large" align="center">
-                <Text variant="title2" id="yhteystiedot">
+                <Text variant="title3" id="yhteystiedot">
                   Yhteystiedot
                 </Text>
-
-                <LeafDecoration />
 
                 <Text variant="body">
                   Mikäli herää kysymyksiä, kommentteja tai muuta, olkaa toki yhteydessä!
@@ -229,6 +202,7 @@ export default function Home() {
                     </div>
                   </Stack>
                 </div>
+
               </Stack>
             </Section>
 
@@ -240,7 +214,7 @@ export default function Home() {
 
                 <LeafDecoration />
 
-                <Text variant="body">
+                <Text variant="body" align="justify">
                   Hey B (and anyone else feeling international) this is for you! 
                   Dear peeps, we welcome you to join and celebrate the first steps of our marriage. 
                   We hope to see you in August, can't wait! 
@@ -282,7 +256,7 @@ export default function Home() {
                   <Spacer size="small" />
                   <Text variant="body" color="primary"><TextHighlight>Bonus:</TextHighlight> Please remember to&nbsp;
                     <Link
-                      href="https://TODO"
+                      href="https://forms.gle/q6CxYFJRqeRjcsY57"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -296,8 +270,20 @@ export default function Home() {
                   Schedule & Arrival
                 </Text>
 
-                <Text variant="body" color="text">
-                  The wedding ceremony takes place at the church of Kärkölä city starting at 3 PM sharp. Please be there in time. After the ceremony we shall relocate to our wedding venue at Etu-Koskela ranch. We'll be in for food and music and if you so wish the guests have the opportunity to party 'til the dawn. Should you wish to give a toast or organize another kind of a show during the party, please contact the Maid of Honor Annika (contacts below) prior to the event. If you wish to only participate to the wedding celebration after the ceremony you can arrive straight to the wedding venue. Please inform us beforehand if you wish to participate this way.
+                <Text variant="body" color="text" align="justify">
+                  The wedding ceremony takes place at <Link
+                        href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        the church of Kärkölä city
+                      </Link> starting at 3 PM sharp. Please be there in time. After the ceremony we shall relocate to our wedding venue at <Link
+                        href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Etu-Koskela ranch
+                      </Link>. We'll be in for food and music and if you so wish the guests have the opportunity to party 'til the dawn. Should you wish to give a toast or organize another kind of a show during the party, please contact the Maid of Honor Annika (contacts below) prior to the event. If you wish to only participate to the wedding celebration after the ceremony you can arrive straight to the wedding venue. Please inform us beforehand if you wish to participate this way.
                   <Spacer size="normal" />
                   You can reach the church and the venue nearby also by public transportation (Lappila train station) but we encourage you to explore the possibilities for carpooling. The venue has plenty of parking space. The host of the venue has also promised to drive a bigger taxi between the venue and Lahti city for a fixed price, so if you need a taxi just let us know.
                   <Spacer size="normal" />
@@ -313,7 +299,7 @@ export default function Home() {
                   <strong>RSVP by 24th July 2022. </strong>
                   <Spacer size="medium" />
 
-                  <Button onClick={() => window.open("https://TODO", "_blank") }>RSVP</Button>
+                  <Button onClick={() => window.open("https://forms.gle/q6CxYFJRqeRjcsY57", "_blank") }>RSVP</Button>
                   <Spacer size="large" />
                 </Text>
 
@@ -321,7 +307,7 @@ export default function Home() {
                   Accommodation
                 </Text>
 
-                <Text variant="body">
+                <Text variant="body" align="justify">
                   If you are feeling a bit extreme or are wilderness lovers, good news, you can set up a tent next to the venue! If you are looking for a more comfortable way to accommodate, unfortunately there is no more official places of accommodation right next to the venue. The closest hotels near the venue are located in Lahti.
                   <Spacer size="large" />
                 </Text>
@@ -330,9 +316,11 @@ export default function Home() {
                   Gifts
                 </Text>
 
-                <Text variant="body">
+                <Text variant="body" align="justify">
                   Jaakko's Bestman Antti who has helped us move more than a couple of times (thank you Antti!) once during our move kindly expressed that there could be a little less stuff to carry around. During our years together we have successfully filled not one but two homes with everything from pasta makers to Dape's bean bag, and from movie screens to Airfryers. Especially after these long years apart the best gift for us is to have you join our celebration. Should you still wish to gift us in addition to your presence, you can increase our adventure fund at:
-                  <Spacer size="medium" />
+                </Text>
+
+                <Text variant="body">
                   <strong>Janica Tuominen / FI04 1220 5000 3451 58</strong>
                   <Spacer size="large" />
                 </Text>

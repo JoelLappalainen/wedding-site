@@ -17,9 +17,6 @@ export default function Navbar() {
           <NavLink href="#ilmoittautuminen">Ilmoittautuminen</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#reittiohjeet">Reittiohjeet</NavLink>
-        </NavItem>
-        <NavItem>
           <NavLink href="#lisatietoja">Lisätietoja</NavLink>
         </NavItem>
         <NavItem>
