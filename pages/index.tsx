@@ -196,7 +196,7 @@ export default function Home() {
 
                     <div>
                       <Stack spacing="small" align="center">
-                        <Text variant="title3">Annika (kaaso)</Text>
+                        <Text variant="title3">Annika / kaaso</Text>
                         <Link href="tel:+358404122319">040 412 2319</Link>
                       </Stack>
                     </div>
@@ -354,7 +354,7 @@ export default function Home() {
 
                       <div>
                         <Stack spacing="small" align="center">
-                          <Text variant="title3">Annika (kaaso)</Text>
+                          <Text variant="title3">Annika / Maid of Honor</Text>
                           <Link href="tel:+358404122319">040 412 2319</Link>
                         </Stack>
                       </div>
