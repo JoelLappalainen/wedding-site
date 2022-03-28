@@ -207,7 +207,7 @@ export default function Home() {
             </Section>
 
             <Section lang="en">
-              <Stack spacing="large" align="center">
+              <Stack spacing="medium" align="center">
                 <Text variant="title2" id="in-english">
                   In English
                 </Text>
@@ -220,11 +220,11 @@ export default function Home() {
                   We hope to see you in August, can't wait! 
                 </Text>
 
-                <Text variant="body" align="left"> 
+                <Text variant="body" align="left" color="primary"> 
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><strong>TL;DR</strong></Text>
+                  <strong>TL;DR</strong>
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><TextHighlight>What:</TextHighlight> We're getting married, a party!</Text>
+                  <TextHighlight>What:</TextHighlight> We're getting married, a party!
                   <Spacer size="small" />
                   <TextHighlight>Where:</TextHighlight>
                   <Ul>
@@ -248,13 +248,13 @@ export default function Home() {
                     </li>
                   </Ul>
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><TextHighlight>When:</TextHighlight> Ceremony 3:00 PM sharp, party right after at the venue as soon as we have relocated</Text>
+                  <TextHighlight>When:</TextHighlight> Ceremony 3:00 PM sharp, party right after at the venue as soon as we have relocated
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><TextHighlight>Who:</TextHighlight> People designated in the invitation</Text>
+                  <TextHighlight>Who:</TextHighlight> People designated in the invitation
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><TextHighlight>Dress code:</TextHighlight> Smart casual. August nights can be chilly, so remember to pack something warm with you just in case!</Text>
+                  <TextHighlight>Dress code:</TextHighlight> Smart casual. August nights can be chilly, so remember to pack something warm with you just in case!
                   <Spacer size="small" />
-                  <Text variant="body" color="primary"><TextHighlight>Bonus:</TextHighlight> Please remember to&nbsp;
+                  <TextHighlight>Bonus:</TextHighlight> Please remember to&nbsp;
                     <Link
                       href="https://forms.gle/q6CxYFJRqeRjcsY57"
                       target="_blank"
@@ -262,28 +262,27 @@ export default function Home() {
                     >
                       RSVP
                     </Link> by 24th July 2022!
-                  </Text>
                   <Spacer size="large" />
                 </Text>
 
                 <Text variant="title3" id="scheduleAndArrival">
-                  Schedule & Arrival
+                  Schedule &amp; Arrival
                 </Text>
 
-                <Text variant="body" color="text" align="justify">
+                <Text variant="body" align="justify">
                   The wedding ceremony takes place at <Link
-                        href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        the church of Kärkölä city
-                      </Link> starting at 3 PM sharp. Please be there in time. After the ceremony we shall relocate to our wedding venue at <Link
-                        href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Etu-Koskela ranch
-                      </Link>. We'll be in for food and music and if you so wish the guests have the opportunity to party 'til the dawn. Should you wish to give a toast or organize another kind of a show during the party, please contact the Maid of Honor Annika (contacts below) prior to the event. If you wish to only participate to the wedding celebration after the ceremony you can arrive straight to the wedding venue. Please inform us beforehand if you wish to participate this way.
+                    href="https://goo.gl/maps/wpUrU8hchGZ2wvn98"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    the church of Kärkölä city
+                  </Link> starting at 3 PM sharp. Please be there in time. After the ceremony we shall relocate to our wedding venue at <Link
+                    href="https://goo.gl/maps/1RPEKDmGrna1n57B8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Etu-Koskela ranch
+                  </Link>. We'll be in for food and music and if you so wish the guests have the opportunity to party 'til the dawn. Should you wish to give a toast or organize another kind of a show during the party, please contact the Maid of Honor Annika (contacts below) prior to the event. If you wish to only participate to the wedding celebration after the ceremony you can arrive straight to the wedding venue. Please inform us beforehand if you wish to participate this way.
                   <Spacer size="normal" />
                   You can reach the church and the venue nearby also by public transportation (Lappila train station) but we encourage you to explore the possibilities for carpooling. The venue has plenty of parking space. The host of the venue has also promised to drive a bigger taxi between the venue and Lahti city for a fixed price, so if you need a taxi just let us know.
                   <Spacer size="normal" />
@@ -336,36 +335,38 @@ export default function Home() {
 
                 <Spacer size="xlarge" />
 
-                <div>
-                  <Stack axis={{ initial: "x", md: "y" }} spacing="xlarge">
-                    <div>
-                      <Stack spacing="small" align="center">
-                        <Text variant="title3">Janni</Text>
-                        <Link href="tel:+358400616837">0400 616 837</Link>
-                      </Stack>
-                    </div>
+                <Section>
+                  <div>
+                    <Stack axis={{ initial: "x", md: "y" }} spacing="xlarge">
+                      <div>
+                        <Stack spacing="small" align="center">
+                          <Text variant="title3">Janni</Text>
+                          <Link href="tel:+358400616837">0400 616 837</Link>
+                        </Stack>
+                      </div>
 
-                    <div>
-                      <Stack spacing="small" align="center">
-                        <Text variant="title3">Jaakko</Text>
-                        <Link href="tel:+358453533999">045 353 3999</Link>
-                      </Stack>
-                    </div>
+                      <div>
+                        <Stack spacing="small" align="center">
+                          <Text variant="title3">Jaakko</Text>
+                          <Link href="tel:+358453533999">045 353 3999</Link>
+                        </Stack>
+                      </div>
 
-                    <div>
-                      <Stack spacing="small" align="center">
-                        <Text variant="title3">Annika (kaaso)</Text>
-                        <Link href="tel:+358404122319">040 412 2319</Link>
-                      </Stack>
-                    </div>
-                  </Stack>
-                </div>
+                      <div>
+                        <Stack spacing="small" align="center">
+                          <Text variant="title3">Annika (kaaso)</Text>
+                          <Link href="tel:+358404122319">040 412 2319</Link>
+                        </Stack>
+                      </div>
+                    </Stack>
+                  </div>
+                </Section>
               </Stack>
             </Section>
           </Stack>
         </main>
 
-        <Spacer size="xxxlarge" />
+        <Spacer size="xxlarge" />
 
         <Footer />
       </Content>

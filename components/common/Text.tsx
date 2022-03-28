@@ -47,7 +47,14 @@ const StyledText = styled("p", {
       left: { textAlign: "left" },
       right: { textAlign: "right" },
       center: { textAlign: "center" },
-      justify: { textAlign: "justify" }
+      justify: { 
+        textAlign: "justify",
+        when: {
+          md: {
+            textAlign: "center",
+          }
+        }
+      }
     },
   },
   defaultVariants: {
