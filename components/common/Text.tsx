@@ -51,7 +51,7 @@ const StyledText = styled("p", {
         textAlign: "justify",
         when: {
           md: {
-            textAlign: "center",
+            textAlign: "justify",
           }
         }
       }
